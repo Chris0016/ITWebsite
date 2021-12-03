@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Understand the BIOS and UEFI</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../../../styles/bootstrap4/bootstrap.min.css">
+<link href="../../../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../../../plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="../../../plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="../../../plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="../../../plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css">
+<link rel="stylesheet" type="text/css" href="../../../styles/post.css">
+<link rel="stylesheet" type="text/css" href="../../../styles/post_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="logo"><a href="#">Project 001</a></div>
+						<nav class="main_nav">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="all_categories.html">All</a></li>
+								<li><a href="../../../pages/Cloud/cloud_index.html">Cloud</a></li>
+								<li><a href="../../../pages/Hardware/hardware_index.html">Hardware</a></li>
+								<li><a href="../../../pages/Networking/networking_index.html">Networking</a></li>
+								<li><a href="../../../pages/security/security_index.html">Security</a></li>
+								<li><a href="../../../pages/Software/software_index.html">Software</a></li>
+								<li><a href="../../../pages/Troubleshooting/troubleshooting_index.html">Troubleshooting</a></li>
+								<li><a href="../../../pages/Customer Service/customer_service_index.html">Customer Service </a>
+								<li><a href="../../../contact.html">Contact</a></li>
+							</ul>
+						</nav>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+<!-- menu 
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="logo menu_mm"><a href="#">Project 001</a></div>
+		<div class="search">
+			<form action="#">
+				<input type="search" class="header_search_input menu_mm" required="required" placeholder="Type to Search...">
+				<img class="header_search_icon menu_mm" src="../../../images/search_2.png" alt="">
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="../../../index.html">home</a></li>
+				<li class="menu_mm"><a href="#">Fix me</a></li>
+				<li class="menu_mm"><a href="#">Gadgets</a></li>
+				<li class="menu_mm"><a href="#">Lifestyle</a></li>
+				<li class="menu_mm"><a href="#">Video</a></li>
+				<li class="menu_mm"><a href="../../../contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	-->
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="../../../images/Post/Hardware/E0001-home.jpg" data-speed="0.8"></div>
+		<div class="home_content">
+			<div class="post_category trans_200"><a href="../../../category.html" class="trans_200">Software</a></div>
+			<div class="post_title">What is the BIOS/UEFI?</div>
+		</div>
+	</div>
+	
+	<!-- Page Content -->
+
+	<div class="page_content">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+
+				<!-- Post Content -->
+
+				<div class="col-lg-9">
+					<div class="post_content">
+
+						<!-- Top Panel -->
+						<div class="post_panel post_panel_top d-flex flex-row align-items-center justify-content-start">
+							<div class="author_image"><div><img src="../../../images/author.jpg" alt=""></div></div>
+							<div class="post_meta"><a href="#">Christopher Perez</a><span>June 19, 2021 at 6:30 pm</span></div>
+						</div>
+
+						<!-- Post Body -->
+
+						<div class="post_body"> 
+							
+							<h2>Understanding the BIOS/UEFI</h2>
+
+							<p class="post_p">
+							&emsp;In a computer system, external devices such as RAM Modules, keyboards, or mice, need to communicate with the main system. The system also needs to identify the spefics of these devices to work with then efficiently.  In order to solve the issue of connecting these devices with the system, the BIOS was made. BIOS stands for Basic Input-Output System, and it is essentially very low level code(or firmware) that aids in the integration and communication of these devices with the system. The BIOS has been around for over twenty-five years, which serves as a testament to its vitality in computer systems. Modern systems, however, use an enhanced version of the BIOS, namely the Unified Extensible Firmware Interface(UEFI). The UEFI provides extended capabilities and a richer graphical user interface(GUI). Lets take a look into the BIOS and UEFI. 
+							</p>
+
+							<figure>
+								<img src="../../../images/Post/Other/IT Groundwork/A0001-protective_suit.jpg" alt="">
+								<figcaption> Intel 1997 'Fashionable' bunny suit </figcaption>
+							</figure>
+
+						
+							<p class="post_p">
+							&emsp;As mentioned before, at its core, the BIOS is firmware that allows for the integration and communication of upgradable devices on a system. The BIOS is stored EEPROM type chip. EEPROM stands for Electrically Ereaseable Programmable Memory, and it is a form of non-volatile memory that can be easily reprogrammed. Moreover, the BIOS has its own settings interface where changes can be made. Conventionally, the settings interface of the BIOS is called the BIOS Interface, but it is commonly refered to as the BIOS also. 
+							</p>
+							<p class="post_p">
+							&emsp;It is important to note that,  information about external hardware devices is stored in CMOS RAM, and its settings are accessed through the BIOS interface in the 'CMOS Setup program' section.
+							</p>
+							<p class="post_p">
+							&emsp;The BIOS/UEFI are important components of a system that indicate the capabilities of a system. In older systems, the BIOS had to be upgraded each time a new hardware change was made. The process of upgrading the BIOS was much more cumbersome on legacy systems since these chips used ROM technology and therefore needed to be completely replaced by a new physical chip. Luckily, most external devices today apply a concept called 'plug and play'. 'Plug and Play' means that the BIOS/UEFI can automatically detect changes on the system and make the necessary adjustments. 
+							</p>
+
+							<h3>Upgrading the BIOS</h3>
+
+							<p class="post_p">
+							&emsp;Of course not everyone has a modern system, so you may need to upgrade the BIOS. How to go about this? Very simple. As mentioned, to do an upgrade on older chips you need to simply run a special software. Using the version number/date you can get the software update from the manufacturer's website. The name of the manufacturer and  version number/date are on the BIOS chip itself. Next, visit the manufacturer's website and download the appropriate BIOS update for the version of the BIOS chip that you have. Lastly, run the downloaded software, and done. Be sure to not interrupt the update process since it can render the computer to become dysfunctional. 
+							</p>
+
+							<h3>UEFI</h3>
+
+							<p class="post_p">
+							&emsp;The Unified Extensible Firmware Interface is the new and enhanced alternate to the BIOS/BIOS Interface. Over the years technology and methods to optimize technology have advanced very rapidly and so has the UEFI to accommodate for these changes. Some of the capabilities that the UEFI provides over the BIOS/BIOS Interface are: user-friendly GUI with mouse support, support for larger size disk size, improved security features, along with many more features that deal with current technology. 
+							</p>
+							<p class="post_p">
+							&emsp;If you'd like to learn about configuring the BIOS?EUFI settings you can <a href="./DA0002-configuring_the_BIOS_and_UEFI_settings.html">click here</a>. 
+							
+							</p>
+							
+
+							<!-- Post Tags -->
+							<div class="post_tags">
+								<ul>
+									<li class="post_tag"><a href="#">Firmware</a></li> 
+									<li class="post_tag"><a href="#">User Interface</a></li>
+									<li class="post_tag"><a href="#">BIOS</a></li>
+									<li class="post_tag"><a href="#">UEFI</a></li>
+								</ul>
+							</div>
+						</div>
+ 						<!-- Similar Posts -->
+						<div class="similar_posts">
+							<div class="section_title">Related Posts</div>
+
+							<div class="grid clearfix">
+
+								<!-- Small Card With Image -->
+								<div class="card card_small_with_image grid-item">
+									<img class="card-img-top" src="../../../images/post_25.jpg" alt="https://unsplash.com/@jakobowens1">
+									<div class="card-body">
+										<div class="card-title card-title-small"><a href="../../../post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
+										<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+									</div>
+								</div>
+
+								<!-- Small Card With Image -->
+								<div class="card card_small_with_image grid-item">
+									<img class="card-img-top" src="../../../images/post_2.jpg" alt="https://unsplash.com/@jakobowens1">
+									<div class="card-body">
+										<div class="card-title card-title-small"><a href="../../../post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
+										<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+									</div>
+								</div>
+
+								<!-- Small Card With Image -->
+								<div class="card card_small_with_image grid-item">
+									<img class="card-img-top" src="../../../images/post_26.jpg" alt="https://unsplash.com/@jakobowens1">
+									<div class="card-body">
+										<div class="card-title card-title-small"><a href="../../../post.html">How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</a></div>
+										<small class="post_meta"><a href="#">Katy Liu</a><span>Sep 29, 2017 at 9:48 am</span></small>
+									</div>
+								</div>
+							</div>
+ 						</div>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+
+				<div class="col-lg-3">
+					<div class="sidebar">
+						<div class="sidebar_background"></div>
+
+						<!-- Top Stories -->
+
+						<div class="sidebar_section">
+							<div class="sidebar_title_container">
+								<div class="sidebar_title">Top Stories</div>
+								<div class="sidebar_slider_nav">
+									<div class="custom_nav_container sidebar_slider_nav_container">
+										<div class="custom_prev custom_prev_top">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
+											</svg>
+										</div>
+								        <ul id="custom_dots" class="custom_dots custom_dots_top">
+											<li class="custom_dot custom_dot_top active"><span></span></li>
+											<li class="custom_dot custom_dot_top"><span></span></li>
+											<li class="custom_dot custom_dot_top"><span></span></li>
+										</ul>
+										<div class="custom_next custom_next_top">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar_section_content">
+
+								<!-- Top Stories Slider -->
+								<div class="sidebar_slider_container">
+									<div class="owl-carousel owl-theme sidebar_slider_top">
+
+										<!-- Top Stories Slider Item -->
+										<div class="owl-item">
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Top Stories Slider Item -->
+										<div class="owl-item">
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Top Stories Slider Item -->
+										<div class="owl-item">
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Sidebar Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/top_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Advertising -->
+
+						<div class="sidebar_section">
+							<div class="advertising">
+								<div class="advertising_background" style="background-image:url(../../../images/post_17.jpg)"></div>
+								<div class="advertising_content d-flex flex-column align-items-start justify-content-end">
+									<div class="advertising_perc">-15%</div>
+									<div class="advertising_link"><a href="#">How Did van Gogh’s Turbulent Mind</a></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Newest Videos -->
+
+						<div class="sidebar_section newest_videos">
+							<div class="sidebar_title_container">
+								<div class="sidebar_title">Newest Videos</div>
+								<div class="sidebar_slider_nav">
+									<div class="custom_nav_container sidebar_slider_nav_container">
+										<div class="custom_prev custom_prev_vid">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
+											</svg>
+										</div>
+								        <ul id="custom_dots" class="custom_dots custom_dots_vid">
+											<li class="custom_dot custom_dot_vid active"><span></span></li>
+											<li class="custom_dot custom_dot_vid"><span></span></li>
+											<li class="custom_dot custom_dot_vid"><span></span></li>
+										</ul>
+										<div class="custom_next custom_next_vid">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar_section_content">
+
+								<!-- Sidebar Slider -->
+								<div class="sidebar_slider_container">
+									<div class="owl-carousel owl-theme sidebar_slider_vid">
+
+										<!-- Newest Videos Slider Item -->
+										<div class="owl-item">
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Newest Videos Slider Item -->
+										<div class="owl-item">
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Newest Videos Slider Item -->
+										<div class="owl-item">
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_1.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_2.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_3.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Newest Videos Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="side_post_image"><div><img src="../../../images/vid_4.jpg" alt=""></div></div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Advertising 2 -->
+
+						<div class="sidebar_section">
+							<div class="advertising_2">
+								<div class="advertising_background" style="background-image:url(../../../images/post_18.jpg)"></div>
+								<div class="advertising_2_content d-flex flex-column align-items-center justify-content-center">
+									<div class="advertising_2_link"><a href="#">Turbulent <span>Mind</span></a></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Future Events -->
+
+						<div class="sidebar_section future_events">
+							<div class="sidebar_title_container">
+								<div class="sidebar_title">Future Events</div>
+								<div class="sidebar_slider_nav">
+									<div class="custom_nav_container sidebar_slider_nav_container">
+										<div class="custom_prev custom_prev_events">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="0,5.61 5.609,0 7,0 7,1.438 2.438,6 7,10.563 7,12 5.609,12 -0.002,6.39 "/>
+											</svg>
+										</div>
+								        <ul id="custom_dots" class="custom_dots custom_dots_events">
+											<li class="custom_dot custom_dot_events active"><span></span></li>
+											<li class="custom_dot custom_dot_events"><span></span></li>
+											<li class="custom_dot custom_dot_events"><span></span></li>
+										</ul>
+										<div class="custom_next custom_next_events">
+											<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+												 width="7px" height="12px" viewBox="0 0 7 12" enable-background="new 0 0 7 12" xml:space="preserve">
+												<polyline fill="#bebebe" points="6.998,6.39 1.389,12 -0.002,12 -0.002,10.562 4.561,6 -0.002,1.438 -0.002,0 1.389,0 7,5.61 "/>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar_section_content">
+
+								<!-- Sidebar Slider -->
+								<div class="sidebar_slider_container">
+									<div class="owl-carousel owl-theme sidebar_slider_events">
+
+										<!-- Future Events Slider Item -->
+										<div class="owl-item">
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">13</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">27</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">09</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">09</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Future Events Slider Item -->
+										<div class="owl-item">
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">13</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">27</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">02</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">09</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+										<!-- Future Events Slider Item -->
+										<div class="owl-item">
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">13</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">27</div>
+															<div class="event_month">apr</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">02</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+											<!-- Future Events Post -->
+											<div class="side_post">
+												<a href="../../../post.html">
+													<div class="d-flex flex-row align-items-xl-center align-items-start justify-content-start">
+														<div class="event_date d-flex flex-column align-items-center justify-content-center">
+															<div class="event_day">09</div>
+															<div class="event_month">may</div>
+														</div>
+														<div class="side_post_content">
+															<div class="side_post_title">How Did van Gogh’s Turbulent Mind</div>
+															<small class="post_meta">Katy Liu<span>Sep 29</span></small>
+														</div>
+													</div>
+												</a>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				<div class="col-lg-9 order-lg-1 order-2">
+					<div class="footer_content">
+						<div class="footer_logo"><a href="#">Project 001</a></div>
+						<div class="footer_social">
+							<ul>
+								<li class="footer_social_facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li class="footer_social_twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li class="footer_social_pinterest"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li class="footer_social_vimeo"><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+								<li class="footer_social_instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li class="footer_social_google"><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+						<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="../../../https://colorlib.com" target="_blank">Colorlib</a>. Downloaded from <a href="../../../https://themeslab.org/" target="_blank">Themeslab</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+					</div>
+				</div>
+				<div class="col-lg-3 order-lg-2 order-1">
+					<div class="subscribe">
+						<div class="subscribe_background"></div>
+						<div class="subscribe_content">
+							<div class="subscribe_title">Subscribe</div>
+							<form action="#">
+								<input type="email" class="sub_input" placeholder="Your Email" required="required">
+								<button class="sub_button">
+									<svg version="1.1" id="link_arrow_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										 width="19px" height="13px" viewBox="0 0 19 13" enable-background="new 0 0 19 13" xml:space="preserve">
+										<polygon fill="#FFFFFF" points="12.475,0 11.061,0 17.081,6.021 0,6.021 0,7.021 17.038,7.021 11.06,13 12.474,13 18.974,6.5 "/>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="../../../js/jquery-3.2.1.min.js"></script>
+<script src="../../../styles/bootstrap4/popper.js"></script>
+<script src="../../../styles/bootstrap4/bootstrap.min.js"></script>
+<script src="../../../plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="../../../plugins/easing/easing.js"></script>
+<script src="../../../plugins/masonry/masonry.js"></script>
+<script src="../../../plugins/parallax-js-master/parallax.min.js"></script>
+<script src="../../../js/post.js"></script>
+</body>
+</html>
